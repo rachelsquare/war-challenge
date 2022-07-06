@@ -12,15 +12,24 @@ struct ContentView: View {
         ZStack {
             Image("background").ignoresSafeArea()
             
+            
+            
             VStack {
+                Spacer()
                 Image("logo")
+                
+                Spacer()
                 
                 HStack {
                     Image("card3")
                     Image("card4")
                 }
                 
+                Spacer()
+                
                 Image("dealbutton")
+                
+                Spacer()
                 
                 HStack {
                     VStack {
@@ -33,8 +42,10 @@ struct ContentView: View {
                             .padding()
                         Text("0")
                     }
-                    
-                }
+                
+                }.foregroundColor(Color.white)
+                Spacer()
+                
                 
             }
         }
