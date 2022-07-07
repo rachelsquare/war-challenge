@@ -12,42 +12,48 @@ struct ContentView: View {
         ZStack {
             Image("background").ignoresSafeArea()
             
-            
+          
             
             VStack {
                 Spacer()
                 Image("logo")
-                
                 Spacer()
-                
                 HStack {
+                    Spacer()
                     Image("card3")
+                    Spacer()
                     Image("card4")
+                    Spacer()
                 }
-                
                 Spacer()
-                
                 Image("dealbutton")
-                
                 Spacer()
-                
                 HStack {
+                    Spacer()
                     VStack {
                         Text("Player")
-                            .padding()
+                            .padding(.bottom, 10)
+                            .font(.headline)
                         Text("0")
+                            .font(.largeTitle)
                     }
+                    Spacer()
                     VStack {
                         Text("CPU")
-                            .padding()
+                            .padding(.bottom, 10)
+                            .font(.headline)
                         Text("0")
+                            .font(.largeTitle)
                     }
+                    Spacer()
                 
                 }.foregroundColor(Color.white)
+                
                 Spacer()
                 
-                
             }
+           
+            
         }
     }
 }
@@ -55,5 +61,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 11")
     }
 }
